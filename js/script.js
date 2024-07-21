@@ -77,7 +77,7 @@ init();
 const commands = {
 
 	help:
-		'Commands: <br> <br> &emsp; <span class="command">about</span> <span class"description">  &emsp; &emsp; &emsp; &emsp; &emsp; Explains this website</span> <br> &emsp; <span class="command">clear </span> <span class"description">  &emsp; &emsp; &emsp; &emsp; &emsp;&nbsp; Clears command history</span>',
+		'Commands: <br> <br> &emsp; <span class="command">about</span> <span class"description">  &emsp; &emsp; &emsp; &emsp; &emsp; Explains this website</span> <br> &emsp; <span class="command">clear </span> <span class"description">  &emsp; &emsp; &emsp; &emsp; &emsp; Clears command history</span>',
 
 	clear:
 		""

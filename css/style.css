@@ -1,8 +1,9 @@
 body {
 	margin: 0;
 	height: 100%;
-	font-family: sans-serif;
 	background-color: #B5BFE2;
+	font-family: "Courier New", Courier, monospace;font-family: "Courier New", Courier, monospace;
+	color: #E5C890;
 }
 
 #keyboard {
@@ -19,7 +20,7 @@ body {
 }
 
 #mainwindow{
-	border-color: #E5C890;
+	border-color: #81C8BE;
        	border-style: solid;	
 	background-color: #51576D;
 	min-height: 60vh;
@@ -72,4 +73,8 @@ body {
 
 .directory{
 	color: #A6D189;
+}
+
+.command{
+	color: #F4B8E4;
 }
