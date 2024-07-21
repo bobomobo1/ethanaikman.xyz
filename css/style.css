@@ -1,0 +1,66 @@
+body {
+	margin: 0;
+	height: 100%;
+	font-family: sans-serif;
+	background-color: #f6f9fc;
+}
+
+#keyboard {
+	opacity: 0;
+}
+
+.main-scene {
+	min-height: 60vh;
+  	align-items: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: space-between;
+	padding: 4rem 4rem;
+}
+
+#mainwindow{
+	background-color: red;
+	min-height: 60vh;
+  	max-height: 60vh;
+  	padding: 0.5rem 1rem;
+  	display: flex;
+  	flex-direction: column;
+	border-radius: 10px;
+}
+
+#terminal{
+	overflow-y: hidden;
+	overflow: auto;
+}
+
+.commandline{
+	position: relative;
+
+}
+
+#commandline{
+	position: relative;
+
+}
+
+#userInput{
+	position: relative;
+}
+
+#userInput::after {
+	display: block;
+	content: "";
+	width: 12px;
+	height: 20px;
+	background: rgba(255, 255, 255, 0.7);
+	position: absolute;
+	animation: flash 1s step-start 0s infinite;
+	top: 0;
+	right: -13px;
+}
+
+@keyframes flash{
+	50%{
+		opacity: 0;
+	}
+}
