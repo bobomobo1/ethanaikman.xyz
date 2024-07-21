@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	height: 100%;
 	font-family: sans-serif;
-	background-color: #f6f9fc;
+	background-color: #B5BFE2;
 }
 
 #keyboard {
@@ -10,7 +10,7 @@ body {
 }
 
 .main-scene {
-	min-height: 60vh;
+	min-height: 100vh;
   	align-items: stretch;
   	display: flex;
   	flex-direction: column;
@@ -19,13 +19,14 @@ body {
 }
 
 #mainwindow{
-	background-color: red;
+	border-color: #E5C890;
+       	border-style: solid;	
+	background-color: #51576D;
 	min-height: 60vh;
   	max-height: 60vh;
   	padding: 0.5rem 1rem;
   	display: flex;
   	flex-direction: column;
-	border-radius: 10px;
 }
 
 #terminal{
@@ -63,4 +64,12 @@ body {
 	50%{
 		opacity: 0;
 	}
+}
+
+.prompt{
+	color: #E78284;
+}
+
+.directory{
+	color: #A6D189;
 }

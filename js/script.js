@@ -14,11 +14,13 @@ const commandInput = function executeCommand(input){
 	}
 
 	output = `<div class="commandline">
-		      <span>➜</span>
+		      <span class="prompt">➜</span>
+		      <span class="directory">~</span>
 		      ${input}
 		  </div>`;
 	if(!commands.hasOwnProperty(input)){
 	output += `<div class="commandline">
+		      <span class="directory">~</span>
 		      command:
 		      ${input}
 		      doesn't exist.
@@ -31,6 +33,12 @@ const commandInput = function executeCommand(input){
 	
 	terminal.innerHTML = `${terminal.innerHTML}<div class="commandline">${output}</div>`;
 	terminal.scrollTop = terminal.scrollHeight;
+
+
+	if(input === "clear"){
+		clearScreen();	
+	}
+
 };
 
 const key = function keyEvent(e){
@@ -58,6 +66,10 @@ const backspace = function backSpaceKeyEvent(e) {
   );
 };
 
+const clearScreen = () => {
+	terminal.innerHTML = "";
+};
+
 document.addEventListener("keydown", backspace);
 document.addEventListener("keypress", key);
 init();
@@ -65,5 +77,9 @@ init();
 const commands = {
 
 	help:
-		'Commands: <br> <br> &emsp; <span class="command">about</span> <span class"description">  &emsp; &emsp; &emsp; &emsp; &emsp; Explains this website</span>'
+		'Commands: <br> <br> &emsp; <span class="command">about</span> <span class"description">  &emsp; &emsp; &emsp; &emsp; &emsp; Explains this website</span> <br> &emsp; <span class="command">clear </span> <span class"description">  &emsp; &emsp; &emsp; &emsp; &emsp;&nbsp; Clears command history</span>',
+
+	clear:
+		""
+		
 };
